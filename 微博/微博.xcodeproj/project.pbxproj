@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4A02ED7A1D734C98008511A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02ED791D734C98008511A9 /* AppDelegate.swift */; };
-		4A02ED7C1D734C98008511A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02ED7B1D734C98008511A9 /* ViewController.swift */; };
-		4A02ED7F1D734C98008511A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A02ED7D1D734C98008511A9 /* Main.storyboard */; };
 		4A02ED811D734C98008511A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A02ED801D734C98008511A9 /* Assets.xcassets */; };
-		4A02ED841D734C98008511A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A02ED821D734C98008511A9 /* LaunchScreen.storyboard */; };
 		4A02ED8F1D734C98008511A9 /* __Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02ED8E1D734C98008511A9 /* __Tests.swift */; };
 		4A02ED9A1D734C98008511A9 /* __UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02ED991D734C98008511A9 /* __UITests.swift */; };
+		4A1294EE1D7490DD0014267C /* WBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1294ED1D7490DD0014267C /* WBMainViewController.swift */; };
+		4A1294F01D74911A0014267C /* WBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1294EF1D74911A0014267C /* WBNavigationController.swift */; };
+		4A1294F21D74913A0014267C /* WBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1294F11D74913A0014267C /* WBBaseViewController.swift */; };
+		4A1294F41D74918A0014267C /* WBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1294F31D74918A0014267C /* WBHomeViewController.swift */; };
+		4A1294F61D7491990014267C /* WBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1294F51D7491990014267C /* WBMessageViewController.swift */; };
+		4A1294F81D7491A50014267C /* WBDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1294F71D7491A50014267C /* WBDiscoverViewController.swift */; };
+		4A1294FA1D7491B50014267C /* WBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1294F91D7491B50014267C /* WBProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +40,7 @@
 /* Begin PBXFileReference section */
 		4A02ED761D734C98008511A9 /* 微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A02ED791D734C98008511A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A02ED7B1D734C98008511A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4A02ED7E1D734C98008511A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A02ED801D734C98008511A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4A02ED831D734C98008511A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A02ED851D734C98008511A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A02ED8A1D734C98008511A9 /* 微博Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微博Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A02ED8E1D734C98008511A9 /* __Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __Tests.swift; sourceTree = "<group>"; };
@@ -47,6 +48,13 @@
 		4A02ED951D734C98008511A9 /* 微博UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微博UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A02ED991D734C98008511A9 /* __UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __UITests.swift; sourceTree = "<group>"; };
 		4A02ED9B1D734C98008511A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A1294ED1D7490DD0014267C /* WBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMainViewController.swift; sourceTree = "<group>"; };
+		4A1294EF1D74911A0014267C /* WBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationController.swift; sourceTree = "<group>"; };
+		4A1294F11D74913A0014267C /* WBBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBaseViewController.swift; sourceTree = "<group>"; };
+		4A1294F31D74918A0014267C /* WBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBHomeViewController.swift; sourceTree = "<group>"; };
+		4A1294F51D7491990014267C /* WBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMessageViewController.swift; sourceTree = "<group>"; };
+		4A1294F71D7491A50014267C /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDiscoverViewController.swift; sourceTree = "<group>"; };
+		4A1294F91D7491B50014267C /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +105,9 @@
 		4A02ED781D734C98008511A9 /* 微博 */ = {
 			isa = PBXGroup;
 			children = (
+				4A1294E31D7490620014267C /* Classes */,
 				4A02ED791D734C98008511A9 /* AppDelegate.swift */,
-				4A02ED7B1D734C98008511A9 /* ViewController.swift */,
-				4A02ED7D1D734C98008511A9 /* Main.storyboard */,
 				4A02ED801D734C98008511A9 /* Assets.xcassets */,
-				4A02ED821D734C98008511A9 /* LaunchScreen.storyboard */,
 				4A02ED851D734C98008511A9 /* Info.plist */,
 			);
 			path = "微博";
@@ -123,6 +129,92 @@
 				4A02ED9B1D734C98008511A9 /* Info.plist */,
 			);
 			path = "微博UITests";
+			sourceTree = "<group>";
+		};
+		4A1294E31D7490620014267C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A1294E61D7490620014267C /* View(视图和控制器) */,
+				4A1294E41D7490620014267C /* Model(模型) */,
+				4A1294E51D7490620014267C /* Tools(工具) */,
+				4A1294EC1D7490620014267C /* ViewModel(视图模型) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4A1294E41D7490620014267C /* Model(模型) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model(模型)";
+			sourceTree = "<group>";
+		};
+		4A1294E51D7490620014267C /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tools(工具)";
+			sourceTree = "<group>";
+		};
+		4A1294E61D7490620014267C /* View(视图和控制器) */ = {
+			isa = PBXGroup;
+			children = (
+				4A1294E91D7490620014267C /* Main */,
+				4A1294E81D7490620014267C /* Home */,
+				4A1294EA1D7490620014267C /* Message */,
+				4A1294E71D7490620014267C /* Discover */,
+				4A1294EB1D7490620014267C /* Profile */,
+			);
+			path = "View(视图和控制器)";
+			sourceTree = "<group>";
+		};
+		4A1294E71D7490620014267C /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				4A1294F71D7491A50014267C /* WBDiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		4A1294E81D7490620014267C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A1294F31D74918A0014267C /* WBHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4A1294E91D7490620014267C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4A1294ED1D7490DD0014267C /* WBMainViewController.swift */,
+				4A1294EF1D74911A0014267C /* WBNavigationController.swift */,
+				4A1294F11D74913A0014267C /* WBBaseViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4A1294EA1D7490620014267C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				4A1294F51D7491990014267C /* WBMessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		4A1294EB1D7490620014267C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4A1294F91D7491B50014267C /* WBProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4A1294EC1D7490620014267C /* ViewModel(视图模型) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ViewModel(视图模型)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +279,7 @@
 		4A02ED6E1D734C98008511A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WB;
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = lk;
@@ -232,9 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A02ED841D734C98008511A9 /* LaunchScreen.storyboard in Resources */,
 				4A02ED811D734C98008511A9 /* Assets.xcassets in Resources */,
-				4A02ED7F1D734C98008511A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +350,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A02ED7C1D734C98008511A9 /* ViewController.swift in Sources */,
+				4A1294F21D74913A0014267C /* WBBaseViewController.swift in Sources */,
+				4A1294FA1D7491B50014267C /* WBProfileViewController.swift in Sources */,
+				4A1294F81D7491A50014267C /* WBDiscoverViewController.swift in Sources */,
+				4A1294EE1D7490DD0014267C /* WBMainViewController.swift in Sources */,
+				4A1294F41D74918A0014267C /* WBHomeViewController.swift in Sources */,
 				4A02ED7A1D734C98008511A9 /* AppDelegate.swift in Sources */,
+				4A1294F01D74911A0014267C /* WBNavigationController.swift in Sources */,
+				4A1294F61D7491990014267C /* WBMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,25 +391,6 @@
 			targetProxy = 4A02ED961D734C98008511A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4A02ED7D1D734C98008511A9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A02ED7E1D734C98008511A9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4A02ED821D734C98008511A9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A02ED831D734C98008511A9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4A02ED9C1D734C98008511A9 /* Debug */ = {
@@ -406,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "微博/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lk.--";
@@ -418,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "微博/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lk.--";
@@ -495,6 +575,7 @@
 				4A02EDA01D734C98008511A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A02EDA11D734C98008511A9 /* Build configuration list for PBXNativeTarget "微博Tests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +584,7 @@
 				4A02EDA31D734C98008511A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A02EDA41D734C98008511A9 /* Build configuration list for PBXNativeTarget "微博UITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +593,7 @@
 				4A02EDA61D734C98008511A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
