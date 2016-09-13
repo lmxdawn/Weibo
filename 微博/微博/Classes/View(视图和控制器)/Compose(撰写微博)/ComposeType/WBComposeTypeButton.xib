@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WBComposeTypeButton" customModule="微博" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar_compose_idea" translatesAutoresizingMaskIntoConstraints="NO" id="4zi-4u-Mt5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEx-d8-NxT">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4zi-4u-Mt5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3Bc-qI-e1O"/>
+                <constraint firstAttribute="bottom" secondItem="gEx-d8-NxT" secondAttribute="bottom" id="97B-ZP-2b1"/>
+                <constraint firstItem="gEx-d8-NxT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="P9C-VO-fMx"/>
+                <constraint firstItem="4zi-4u-Mt5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dsx-dD-Wlg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="4zi-4u-Mt5" id="gIv-aV-DIr"/>
+                <outlet property="titleLabel" destination="gEx-d8-NxT" id="Nvy-zv-EOV"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="tabbar_compose_idea" width="71" height="71"/>
+    </resources>
+</document>

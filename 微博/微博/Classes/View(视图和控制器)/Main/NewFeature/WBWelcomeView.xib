@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WBWelcomeView" customModule="微博" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="chd-7s-zSr"/>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎归来" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xW4-ph-gV5">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default_big" translatesAutoresizingMaskIntoConstraints="NO" id="Bnf-m8-awD">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="XkG-uX-jm0"/>
+                        <constraint firstAttribute="width" constant="85" id="wwp-l9-acr"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xW4-ph-gV5" firstAttribute="centerX" secondItem="Bnf-m8-awD" secondAttribute="centerX" id="5bN-xA-fgX"/>
+                <constraint firstItem="chd-7s-zSr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7Q6-RC-v7P"/>
+                <constraint firstItem="xW4-ph-gV5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="N9a-lx-rxw"/>
+                <constraint firstAttribute="bottom" secondItem="Bnf-m8-awD" secondAttribute="bottom" constant="163" id="XX2-Wt-mMM"/>
+                <constraint firstAttribute="bottom" secondItem="chd-7s-zSr" secondAttribute="bottom" id="cfD-bK-p53"/>
+                <constraint firstItem="chd-7s-zSr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="clc-je-x5x"/>
+                <constraint firstItem="xW4-ph-gV5" firstAttribute="top" secondItem="Bnf-m8-awD" secondAttribute="bottom" constant="14" id="d3m-cO-lA0"/>
+                <constraint firstAttribute="trailing" secondItem="chd-7s-zSr" secondAttribute="trailing" id="gMC-Bo-6w9"/>
+                <constraint firstItem="xW4-ph-gV5" firstAttribute="width" secondItem="Bnf-m8-awD" secondAttribute="height" multiplier="74:85" id="hWr-IP-dNZ"/>
+                <constraint firstItem="Bnf-m8-awD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wvY-9W-4dZ"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomCons" destination="XX2-Wt-mMM" id="Ep0-Om-Bvd"/>
+                <outlet property="iconView" destination="Bnf-m8-awD" id="Kjb-jZ-H2H"/>
+                <outlet property="iconWidthCons" destination="wwp-l9-acr" id="4Me-w2-TvI"/>
+                <outlet property="tipLabel" destination="xW4-ph-gV5" id="BJ5-v7-nbb"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="113.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad_background" width="375" height="667"/>
+        <image name="avatar_default_big" width="85" height="85"/>
+    </resources>
+</document>

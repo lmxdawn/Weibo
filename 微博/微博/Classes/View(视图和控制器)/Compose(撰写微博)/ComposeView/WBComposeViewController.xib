@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WBComposeViewController" customModule="微博" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="E9a-L7-LRH" id="4H8-rN-OJy"/>
+                <outlet property="titleLabel" destination="ZRQ-OQ-vzs" id="AfY-yy-enG"/>
+                <outlet property="toolbar" destination="YqJ-yB-BkR" id="er2-ke-BKN"/>
+                <outlet property="toolbarBottomCons" destination="ObN-46-eMB" id="oD6-pg-2EJ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="mle-bg-wKS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E9a-L7-LRH" userLabel="编辑视图" customClass="WBComposeTextView" customModule="微博" customModuleProvider="target">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YqJ-yB-BkR" userLabel="底部工具栏">
+                    <items/>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YqJ-yB-BkR" secondAttribute="trailing" id="2vH-lm-Dt7"/>
+                <constraint firstItem="E9a-L7-LRH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8tK-GR-WEA"/>
+                <constraint firstItem="YqJ-yB-BkR" firstAttribute="top" secondItem="E9a-L7-LRH" secondAttribute="bottom" id="LZH-En-tBa"/>
+                <constraint firstAttribute="bottom" secondItem="YqJ-yB-BkR" secondAttribute="bottom" id="ObN-46-eMB"/>
+                <constraint firstAttribute="trailing" secondItem="E9a-L7-LRH" secondAttribute="trailing" id="Sec-dt-hMa"/>
+                <constraint firstItem="E9a-L7-LRH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ri9-Lv-xll"/>
+                <constraint firstItem="YqJ-yB-BkR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yMF-pn-jTm"/>
+            </constraints>
+            <point key="canvasLocation" x="77.5" y="113.5"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZRQ-OQ-vzs">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <attributedString key="attributedText">
+                <fragment content="发微博">
+                    <attributes>
+                        <font key="NSFont" size="13" name="PingFangSC-Regular"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment>
+                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                    <attributes>
+                        <font key="NSFont" size="17" name="HelveticaNeue"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment content=" ">
+                    <attributes>
+                        <font key="NSFont" size="2" name="HelveticaNeue"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment>
+                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                    <attributes>
+                        <font key="NSFont" size="17" name="HelveticaNeue"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment content="兰茗翔">
+                    <attributes>
+                        <color key="NSColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <font key="NSFont" size="11" name="PingFangSC-Regular"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+            </attributedString>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="9" y="703"/>
+        </label>
+    </objects>
+</document>

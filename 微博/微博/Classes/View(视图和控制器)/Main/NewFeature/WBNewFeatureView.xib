@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WBNewFeatureView" customModule="微博" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4L-Us-4YC">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0g-ss-ki8">
+                    <state key="normal" title="进入微博" backgroundImage="new_feature_finish_button"/>
+                    <state key="highlighted" backgroundImage="new_feature_finish_button_highlighted"/>
+                    <connections>
+                        <action selector="enterStatus" destination="iN0-l3-epB" eventType="touchUpInside" id="RJu-VH-nv2"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="eYd-Kb-iWM">
+                    <color key="pageIndicatorTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eYd-Kb-iWM" firstAttribute="top" secondItem="Y0g-ss-ki8" secondAttribute="bottom" constant="33" id="3Mf-hZ-hAr"/>
+                <constraint firstAttribute="bottom" secondItem="Y0g-ss-ki8" secondAttribute="bottom" constant="100" id="3if-lk-3ue"/>
+                <constraint firstItem="eYd-Kb-iWM" firstAttribute="centerX" secondItem="Y0g-ss-ki8" secondAttribute="centerX" id="SLJ-Qv-Rw2"/>
+                <constraint firstItem="P4L-Us-4YC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ed2-0W-a9i"/>
+                <constraint firstItem="P4L-Us-4YC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="emd-Me-fZm"/>
+                <constraint firstAttribute="bottom" secondItem="P4L-Us-4YC" secondAttribute="bottom" id="oPj-nx-ooU"/>
+                <constraint firstAttribute="trailing" secondItem="P4L-Us-4YC" secondAttribute="trailing" id="qvq-Ij-N6V"/>
+                <constraint firstItem="Y0g-ss-ki8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="w6L-pw-5On"/>
+            </constraints>
+            <connections>
+                <outlet property="enterButton" destination="Y0g-ss-ki8" id="ZDn-Tj-4l8"/>
+                <outlet property="pageControl" destination="eYd-Kb-iWM" id="3Wl-Dt-5N8"/>
+                <outlet property="scrollView" destination="P4L-Us-4YC" id="l3h-4C-Mn5"/>
+            </connections>
+            <point key="canvasLocation" x="53.5" y="113.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="new_feature_finish_button" width="105" height="36"/>
+        <image name="new_feature_finish_button_highlighted" width="105" height="36"/>
+    </resources>
+</document>
