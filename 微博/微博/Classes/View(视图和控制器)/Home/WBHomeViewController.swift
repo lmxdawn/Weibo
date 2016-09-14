@@ -20,6 +20,32 @@ class WBHomeViewController: WBBaseViewController {
         super.viewDidLoad()
         
         
+        // 注册通知
+        NotificationCenter.default().addObserver(self, selector: #selector(browserPhoto), name: WBStatusCellBrowserPhotoNotification, object: nil)
+        
+    }
+    
+    deinit {
+        // 注销通知
+        NotificationCenter.default().removeObserver(self)
+    }
+    
+    /// 浏览照片通知监听方法
+    @objc private func browserPhoto(n:Notification){
+        
+        // 从通知的 userInfo 提取参数
+        guard let selectedIndex = n.userInfo?[WBStatusCellBrowserPhotoSelectedIndexKey] as? Int,
+            urls = n.userInfo?[WBStatusCellBrowserPhotoUrlsKey] as? [String],
+            imageViewList = n.userInfo?[WBStatusCellBrowserPhotoImageViewsKey] as? [UIImageView] else{
+            return
+        }
+        
+        // 展现照片浏览控制器
+        let vc = HMPhotoBrowserController.photoBrowser(withSelectedIndex: selectedIndex,
+                                                       urls: urls,
+                                                       parentImageViews: imageViewList)
+        present(vc, animated: true, completion: nil)
+        
     }
     
     ///微博数据数组

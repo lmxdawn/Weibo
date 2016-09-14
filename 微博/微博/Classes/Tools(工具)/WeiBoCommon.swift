@@ -25,6 +25,18 @@ let WBUserShouldLoginNotification = "WBUserShouldLoginNotification"
 // 用户登录成功通知
 let WBUserLoginSuccessNotification = "WBUserLoginSuccessNotification"
 
+
+/// 照片浏览通知
+let WBStatusCellBrowserPhotoNotification = "WBStatusCellBrowserPhotoNotification"
+/// @param selectedIndex    选中照片索引
+let WBStatusCellBrowserPhotoSelectedIndexKey = "WBStatusCellBrowserPhotoSelectedIndexKey"
+/// @param urls             浏览照片 URL 字符串数组
+let WBStatusCellBrowserPhotoUrlsKey = "WBStatusCellBrowserPhotoUrlsKey"
+/// @param parentImageViews 父视图的图像视图数组，用户展现和解除转场动画参照
+let WBStatusCellBrowserPhotoImageViewsKey = "WBStatusCellBrowserPhotoImageViewsKey"
+
+
+
 // MARK: - 微博配图视图常量
 // 最多显示多少个ImageView
 let WBStatusPictureViewMaxCount = 9

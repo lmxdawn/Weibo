@@ -20,7 +20,14 @@ class WBStatus: NSObject {
     var text:String?
     
     /// 微博创建时间
-    var created_at:String?
+    var created_at:String?{
+        didSet{
+            created_data  = Date.cz_sinaDate(string: created_at ?? "")
+        }
+    }
+    var created_data:Date?
+    
+    
     
     /// 微博来源
     var source:String?{

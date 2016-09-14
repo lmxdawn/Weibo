@@ -105,6 +105,9 @@ class WBMainViewController: UITabBarController {
             
             let nav = UINavigationController(rootViewController: v)
             
+            // 强行更新约束
+            nav.view.layoutIfNeeded()
+            
             self.present(nav, animated: true, completion: {
                 
                 vc?.removeFromSuperview()

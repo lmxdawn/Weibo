@@ -29,7 +29,7 @@ class WBStatusListViewModel {
         let max_id = !pullup ? 0 :(statusList.last?.status.id ?? 0)
         
         
-        WBNetworkManager.shared.statusList(since_id: since_id,max_id: max_id) { (list, isSuccess) in
+        WBStatusListDAL.loadStatus(since_id: since_id,max_id: max_id) { (list, isSuccess) in
             
             // 判断网络请求是否成功
             if !isSuccess{
